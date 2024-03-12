@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="./stylce.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  
+</head>
+<body>
+
+  <div class="contain">
+    <div class="top">
+      <div class="front">
+        <img src="./images/card-logo.svg">
+  
+        <h3 id="cardNumber">0000 0000 0000 0000</h3>
+  
+        <div class="name">
+          <h4 id="cardName">Jane Appleseed</h4>
+          <h4 id="expiry">00/00</h4>
+        </div>
+        
+  
+      </div>
+      <div class="back">
+  
+        <p class="cvv" id="cvv">000</p>
+  
+      </div>
+  
+  
+      
+  
+    </div>
+  
+  
+    <div class="bottom">
+      <div class="left">
+  
+      </div>
+      
+  
+      <div class="right">
+  
+        <form action="" id="cardDetails">
+          <label for="">Cardholder Name</label>
+          <input type="text" id="nameInput" placeholder="e.g. Jane Appleseed" required></br>
+          
+          <label for="">Card Number</label>
+          <input type="text" id="numberInput" placeholder="e.g. 1234 5678 9123 0000" required></br>
+          
+          <div class="card">
+            <div>
+              <label for="">Exp. Date (MM/YY)</label>
+              <div class="expiry">
+                <input type="text" id="month" placeholder="MM" required>
+  
+                <input type="text" id="year" placeholder="YY" required>
+              </div>
+            </div>
+          
+          
+          
+            <div class="cvv">
+              <label for="">CVV</label>
+              <input type="text" id="cvvInput" placeholder="e.g. 123" required></br>
+            </div>
+          </div>
+  
+          <input type="submit" id="confirm" value="Confirm">
+  
+  
+        </form>
+  
+  
+        <div class="thank-you" id="thankYou">
+          <img src="./images/icon-complete.svg">
+          <h2>Thank You!</h2>
+          <p>We've added your card details</p>
+          <button id="continue" onClick="window.location.reload()">Continue</button>
+        </div>
+        
+    
+  
+  
+        
+      </div>
+  
+    </div>
+  </div>
+
+  
+  <div class="attribution">
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/Greg-davi">Greg David</a>.
+    </p>
+  </div>
+
+  
+
+
+  <script src="./script.js"></script>
+
+
+</body>
+</html>
